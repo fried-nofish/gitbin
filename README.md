@@ -6,7 +6,8 @@ NWPU Fried-NoFish 专用于 freshmen 的 git 练手仓库，请尽情在此处�
 
 - 前排
 
-任务：
+任务
+- [x] 看到这些任务
 - [ ] 进行一次 git clone
 - [ ] 进行一次 git add, commit, push 一条龙
 - [ ] 进行一次 merge（这需要别人参与哦）
