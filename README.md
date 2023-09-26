@@ -11,8 +11,8 @@ NWPU Fried-NoFish 专用于 freshmen 的 git 练手仓库，请尽情在此处�
 - [x] 看到这些任务
 - [ ] 进行一次 git clone
 - [ ] 进行一次 git add, commit, push 一条龙
-- [ ] 进行一次 merge（这需要别人参与哦）
-- [ ] 进行一次 rebase（对比一下 rebase 和 merge，看看优劣和使用场合）
+- [ ] （突发事件）在一些场合，你也需要进行一次 merge（这需要别人参与哦）
+- [ ] （突发事件）在一些场合，你也需要进行一次 rebase（对比一下 rebase 和 merge，看看优劣和使用场合）
 - [ ] 进行一次 fork 和 pull request, 并接受该 pr（一般是别人负责接收，不过这里你可以自己来）
 - [ ] 在本地创建一个基于现有分支的新的分支
 - [ ] 在本地创建一个完全空空的新的分支（提示：--orphan）
