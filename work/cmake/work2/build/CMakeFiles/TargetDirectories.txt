@@ -1,0 +1,3 @@
+C:/article and  study/study/fish_new/work/cmake/work/build/CMakeFiles/myproject.dir
+C:/article and  study/study/fish_new/work/cmake/work/build/CMakeFiles/edit_cache.dir
+C:/article and  study/study/fish_new/work/cmake/work/build/CMakeFiles/rebuild_cache.dir
