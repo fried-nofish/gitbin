@@ -2,6 +2,8 @@
 #include<bits/stdc++.h>
 #define ll long long
 
+int _1;
+
 ll sum(int n,...){
     ll ans = 0;
     va_list A;
