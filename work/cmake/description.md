@@ -8,7 +8,7 @@
 
 - [x] 构建目标的依赖文件只需添加源文件，无需添加头文件
 
-- [ ] 同等条件下手动编写 Makefile 或 ninja.build 必须显式添加头文件依赖才能实现同等效果
+- [x] 同等条件下手动编写 Makefile 或 ninja.build 必须显式添加头文件依赖才能实现同等效果
 
 ### 以下是关于提交文件的一些说明：
 
@@ -99,10 +99,64 @@
 
 探究 CMake 对该现象的实现原理:
 
+   
     当头文件发生改变时，CMake 会根据依赖关系重新生成编译文件，并且只重新编译受影响的源文件。
 
+    GPT的回答(啥也不通版本):
     CMake 使用了一个叫做 "依赖关系分析"（Dependency Scanning）的机制来实现此功能。该机制会分析源文件之间的依赖关系，并将这些信息储存在一个底层的数据库中。当头文件发生改变时，CMake 会检查受影响的源文件的依赖关系，确定需要重新编译的文件，并且告知编译器。
 
-    具体地，CMake 会使用一系列的命令来执行依赖关系分析。在 CMakeLists.txt 文件中，使用 add_executable 或者 add_library 命令添加源文件，然后使用 target_include_directories 命令指定头文件所在的目录。CMake 会自动检测源文件之间的包含关系，并且在构建时使用相应的编译选项。当头文件发生改变时，CMake 会通过检查时间戳等方式来确定需要重新编译的源文件。
+    具体地，CMake 会使用一系列的命令来执行依赖关系分析。在 CMakeLists.txt 文件中，使用 add_executable 或者 add_library 命令添加源文件，然后使用 target_include_directories 命令指定头文件所在的目录。CMake 会自动检测源文件之间的包含关系，并且在构建时使用相应的编译选项。当头文件发生改变时，CMake 会通过检查时间戳等方式来确定需要重新编译的源文件.
 
     
+<font size=5>.\  work4:</font>
+
+    
+    验证同等条件下手动编写 Makefile 或 ninja.build 必须显式添加头文件依赖才能实现同等效果
+
+摘录powershell信息如下:
+
+##### 未显式增加依赖
+
+    PS C:\article and  study\study\fish_new\work\cmake\work4> make
+    g++ -std=c++11 main.o -o myprogram
+    PS C:\article and  study\study\fish_new\work\cmake\work4> .\myprogram.exe
+    Hello, World!
+    This is my custom function!
+
+这里将 myheader.h 
+
+``` C++
+    std::cout << "This is my custom function!" << std::endl;
+```
+
+修改为
+
+```C++
+    std::cout << "This is my custom function!" << std::endl;
+    std::cout << "BOOM WITH MAKEFILE"<<"\n";
+```
+
+    PS C:\article and  study\study\fish_new\work\cmake\work4> make
+    g++ -std=c++11 main.o -o myprogram
+    PS C:\article and  study\study\fish_new\work\cmake\work4> .\myprogram.exe
+    Hello, World!
+    This is my custom function!
+    PS C:\article and  study\study\fish_new\work\cmake\work4> 
+
+看出修改头文件后未察觉更新
+
+##### 显式增加依赖
+头文件修改同上
+
+    PS C:\article and  study\study\fish_new\work\cmake\work4> make 
+    g++ -std=c++11 main.o -o myprogram
+    PS C:\article and  study\study\fish_new\work\cmake\work4> .\myprogram.exe
+    Hello, World!
+    This is my custom function!
+    PS C:\article and  study\study\fish_new\work\cmake\work4> make
+    g++ -std=c++11 -c main.cpp -o main.o
+    g++ -std=c++11 main.o -o myprogram
+    PS C:\article and  study\study\fish_new\work\cmake\work4> .\myprogram.exe
+    Hello, World!
+    This is my custom function!
+    BOOM WITH MAKEFILE
