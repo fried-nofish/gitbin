@@ -1,0 +1,489 @@
+PS D:\321> .\noj3.exe
+1 2
+1
+PS D:\321> 
+PS D:\321>
+PS D:\321>
+ *  还原的历史记录 
+
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321>
+PS D:\321> mkdir build
+mkdir : 具有指定名称 D:\321\build 的项已存在。
+所在位置 行:1 字符: 1
++ mkdir build
++ ~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (D:\321\build:String) [New-Ite  
+   m], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.N  
+   ewItemCommand
+
+PS D:\321> cd build
+PS D:\321\build> cmake -G "MinGW Makefiles" ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   ".."
+
+
+CMake Error: The source directory "D:/321" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+PS D:\321\build>
+PS D:\321\build> cmake -G "MinGW Makefiles" ..
+CMake Error at CMakeLists.txt:1 (cmake_minimun_required):
+  Unknown CMake command "cmake_minimun_required".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as       
+
+    cmake_minimum_required(VERSION 3.28)
+
+  should be added at the top of the file.  The version specified may be lower 
+  if you wish to support older CMake versions for this project.  For more     
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+PS D:\321\build> cmake -G   "MinGW Makefiles" ..
+CMake Error at CMakeLists.txt:1 (cmake_minimun_required):
+  Unknown CMake command "cmake_minimun_required".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as       
+
+    cmake_minimum_required(VERSION 3.28)
+
+  should be added at the top of the file.  The version specified may be lower 
+  if you wish to support older CMake versions for this project.  For more     
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+PS D:\321\build> cmake -G   "MinGW Makefiles" ..
+CMake Error at CMakeLists.txt:1 (cmake_minimun_required):
+  Unknown CMake command "cmake_minimun_required".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as       
+
+    cmake_minimum_required(VERSION 3.28)
+
+  should be added at the top of the file.  The version specified may be lower 
+  if you wish to support older CMake versions for this project.  For more     
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+PS D:\321\build> ^C
+PS D:\321\build> ^C
+PS D:\321\build>
+>> cmake -G "MinGW Makefiles" ..
+CMake Error at CMakeLists.txt:1 (cmake_minimun_required):
+  Unknown CMake command "cmake_minimun_required".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as       
+
+    cmake_minimum_required(VERSION 3.28)
+
+  should be added at the top of the file.  The version specified may be lower 
+  if you wish to support older CMake versions for this project.  For more     
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+PS D:\321\build>
+ *  还原的历史记录 
+
+PS D:\321> cmake -G "MinGW Makefiles" .
+CMake Error at CMakeLists.txt:1 (cmake_minimun_required):
+  Unknown CMake command "cmake_minimun_required".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as    
+
+    cmake_minimum_required(VERSION 3.28)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more  
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.      
+
+-- Configuring incomplete, errors occurred!
+PS D:\321> cmake -G "MinGW Makefiles" .
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of  
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell 
+  CMake that the project does not need compatibility with older versions.  
+
+
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (3.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/321
+PS D:\321>  
+PS D:\321> make
+[ 33%] Building CXX object CMakeFiles/app.dir/noj3.cpp.obj
+[ 66%] Building CXX object CMakeFiles/app.dir/noj22.cpp.obj
+[100%] Linking CXX executable app.exe
+CMakeFiles\app.dir/objects.a(noj22.cpp.obj):noj22.cpp:(.text+0x0): multiple definition of `main'
+CMakeFiles\app.dir/objects.a(noj3.cpp.obj):noj3.cpp:(.text+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles\app.dir\build.make:114: app.exe] Error 1
+make[1]: *** [CMakeFiles\Makefile2:82: CMakeFiles/app.dir/all] Error 2     
+make: *** [Makefile:90: all] Error 2
+PS D:\321> app.exe
+app.exe : 无法将“app.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名
+称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ app.exe
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (app.exe:String) [], Comman  
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\321> mkdir build
+
+
+    目录: D:\321
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/10/29     18:46                build
+
+
+PS D:\321> cd build
+PS D:\321\build> cmake -G "MinGW Makefiles" .
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "."
+
+
+CMake Error: The source directory "D:/321/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.       
+PS D:\321\build> cmake -G "MinGW Makefiles" ..
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of  
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell 
+  CMake that the project does not need compatibility with older versions.  
+
+
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/321/build
+PS D:\321\build> make
+[ 33%] Building CXX object CMakeFiles/app.dir/noj3.cpp.obj
+[ 66%] Building CXX object CMakeFiles/app.dir/noj22.cpp.obj
+[100%] Linking CXX executable app.exe
+CMakeFiles\app.dir/objects.a(noj22.cpp.obj):noj22.cpp:(.text+0x0): multiple definition of `main'
+CMakeFiles\app.dir/objects.a(noj3.cpp.obj):noj3.cpp:(.text+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles\app.dir\build.make:114: app.exe] Error 1
+make[1]: *** [CMakeFiles\Makefile2:82: CMakeFiles/app.dir/all] Error 2     
+make: *** [Makefile:90: all] Error 2
+PS D:\321\build> app.exe
+app.exe : 无法将“app.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名
+称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ app.exe
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (app.exe:String) [], Comman  
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\321\build> text.exe
+text.exe : 无法将“text.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的
+名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。       
+所在位置 行:1 字符: 1
++ text.exe
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (text.exe:String) [], Comma  
+   ndNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\321\build> mkdir build
+
+
+    目录: D:\321\build
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/10/29     18:56                build
+
+
+PS D:\321\build> cd build
+PS D:\321\build\build> cmake -G "MinGW Makefiles" ..
+CMake Warning:
+  Ignoring extra path from command line:
+
+   ".."
+
+
+CMake Error: The source directory "D:/321/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.       
+PS D:\321\build\build> cmake -G "MinGW Makefiles" .
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "."
+
+
+CMake Error: The source directory "D:/321/build/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+PS D:\321\build\build> cmake -G .
+CMake Error: Could not create named generator .
+
+Generators
+* Visual Studio 17 2022        = Generates Visual Studio 2022 project files.
+                                 Use -A option to specify architecture.    
+  Visual Studio 16 2019        = Generates Visual Studio 2019 project files.
+                                 Use -A option to specify architecture.    
+  Visual Studio 15 2017 [arch] = Generates Visual Studio 2017 project files.
+                                 Optional [arch] can be "Win64" or "ARM".  
+  Visual Studio 14 2015 [arch] = Generates Visual Studio 2015 project files.
+                                 Optional [arch] can be "Win64" or "ARM".  
+  Visual Studio 12 2013 [arch] = Deprecated.  Generates Visual Studio 2013 
+                                 project files.  Optional [arch] can be    
+                                 "Win64" or "ARM".
+  Visual Studio 9 2008 [arch]  = Deprecated.  Generates Visual Studio 2008 
+                                 project files.  Optional [arch] can be    
+                                 "Win64" or "IA64".
+  Borland Makefiles            = Generates Borland makefiles.
+  NMake Makefiles              = Generates NMake makefiles.
+  NMake Makefiles JOM          = Generates JOM makefiles.
+  MSYS Makefiles               = Generates MSYS makefiles.
+  MinGW Makefiles              = Generates a make file for use with        
+                                 mingw32-make.
+  Green Hills MULTI            = Generates Green Hills MULTI files
+                                 (experimental, work-in-progress).
+  Unix Makefiles               = Generates standard UNIX makefiles.        
+  Ninja                        = Generates build.ninja files.
+  Ninja Multi-Config           = Generates build-<Config>.ninja files.     
+  Watcom WMake                 = Generates Watcom WMake makefiles.
+  CodeBlocks - MinGW Makefiles = Generates CodeBlocks project files        
+                                 (deprecated).
+  CodeBlocks - NMake Makefiles = Generates CodeBlocks project files        
+                                 (deprecated).
+  CodeBlocks - NMake Makefiles JOM
+                               = Generates CodeBlocks project files        
+                                 (deprecated).
+  CodeBlocks - Ninja           = Generates CodeBlocks project files        
+                                 (deprecated).
+  CodeBlocks - Unix Makefiles  = Generates CodeBlocks project files        
+                                 (deprecated).
+  CodeLite - MinGW Makefiles   = Generates CodeLite project files
+                                 (deprecated).
+  CodeLite - NMake Makefiles   = Generates CodeLite project files
+                                 (deprecated).
+  CodeLite - Ninja             = Generates CodeLite project files
+                                 (deprecated).
+  CodeLite - Unix Makefiles    = Generates CodeLite project files
+                                 (deprecated).
+  Eclipse CDT4 - NMake Makefiles
+                               = Generates Eclipse CDT 4.0 project files   
+                                 (deprecated).
+  Eclipse CDT4 - MinGW Makefiles
+                               = Generates Eclipse CDT 4.0 project files
+                                 (deprecated).
+  Eclipse CDT4 - Ninja         = Generates Eclipse CDT 4.0 project files   
+                                 (deprecated).
+  Eclipse CDT4 - Unix Makefiles= Generates Eclipse CDT 4.0 project files   
+                                 (deprecated).
+  Kate - MinGW Makefiles       = Generates Kate project files (deprecated).
+  Kate - NMake Makefiles       = Generates Kate project files (deprecated).
+  Kate - Ninja                 = Generates Kate project files (deprecated).
+  Kate - Ninja Multi-Config    = Generates Kate project files (deprecated).
+  Kate - Unix Makefiles        = Generates Kate project files (deprecated).
+  Sublime Text 2 - MinGW Makefiles
+                               = Generates Sublime Text 2 project files    
+                                 (deprecated).
+  Sublime Text 2 - NMake Makefiles
+                               = Generates Sublime Text 2 project files    
+                                 (deprecated).
+  Sublime Text 2 - Ninja       = Generates Sublime Text 2 project files    
+                                 (deprecated).
+  Sublime Text 2 - Unix Makefiles
+                               = Generates Sublime Text 2 project files    
+                                 (deprecated).
+
+CMake Warning:
+  No source or binary directory provided.  Both will be assumed to be the  
+  same as the current working directory, but note that this warning will   
+  become a fatal error in future CMake releases.
+
+
+PS D:\321\build\build> cmake -B . 
+CMake Error: The source directory "D:/321/build/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.       
+PS D:\321\build\build> cd ..
+PS D:\321\build> cmake -B .
+CMake Error: The source directory "D:/321/build" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.       
+PS D:\321\build> cd ..
+PS D:\321> cd ..
+PS D:\> cd 321
+PS D:\321> cmake -B .
+-- Building for: Visual Studio 17 2022
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):    
+  Compatibility with CMake < 3.5 will be removed from a future version of  
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell 
+  CMake that the project does not need compatibility with older versions.  
+
+
+-- The C compiler identification is MSVC 19.37.32822.0
+-- The CXX compiler identification is MSVC 19.37.32822.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped   
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped 
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/321
+PS D:\321> make
+make: *** No targets specified and no makefile found.  Stop.
+PS D:\321> cd build
+PS D:\321\build> make
+make: *** No targets specified and no makefile found.  Stop.
+PS D:\321\build> cmake --build build
+Error: could not load cache
+PS D:\321\build> cd ..
+PS D:\321> cmake --build build
+Error: could not load cache
+PS D:\321> ls build
+
+
+    目录: D:\321\build
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/10/29     18:56                build
+
+
+PS D:\321> rm -rfo .\build\      
+Remove-Item : 找不到与参数名称“rfo”匹配的参数。
+所在位置 行:1 字符: 4
++ rm -rfo .\build\
++    ~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item]，Paramete 
+    rBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell  
+   .Commands.RemoveItemCommand
+
+PS D:\321> rm -fo -r .\build\
+PS D:\321> cmake -B build -S .
+-- Building for: Visual Studio 17 2022
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of  
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell 
+  CMake that the project does not need compatibility with older versions.  
+
+
+-- The C compiler identification is MSVC 19.37.32822.0
+-- The CXX compiler identification is MSVC 19.37.32822.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped   
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped 
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (3.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/321/build
+PS D:\321> cmake --build 
+Usage: cmake --build <dir>             [options] [-- [native-options]]
+       cmake --build --preset <preset> [options] [-- [native-options]]     
+Options:
+  <dir>          = Project binary directory to be built.
+  --preset <preset>, --preset=<preset>
+                 = Specify a build preset.
+  --list-presets[=<type>]
+                 = List available build presets.
+  --parallel [<jobs>], -j [<jobs>]
+                 = Build in parallel using the given number of jobs.       
+                   If <jobs> is omitted the native build tool's
+                   default number is used.
+                   The CMAKE_BUILD_PARALLEL_LEVEL environment variable     
+                   specifies a default parallel level when this option     
+                   is not given.
+  -t <tgt>..., --target <tgt>...
+                 = Build <tgt> instead of default targets.
+  --config <cfg> = For multi-configuration tools, choose <cfg>.
+  --clean-first  = Build target 'clean' first, then build.
+                   (To clean only, use --target 'clean'.)BU,
+  --resolve-package-references={on|only|off}
+                 = Restore/resolve package references during build.        
+  -v, --verbose  = Enable verbose output - if supported - including        
+                   the build commands to be executed.
+  --             = Pass remaining options to the native tool.
+PS D:\321> cmake --build build
+适用于 .NET Framework MSBuild 版本 17.7.2+d6990bcfa
+
+  1>Checking Build System
+  Building Custom Rule D:/321/CMakeLists.txt
+  noj3.cpp
+  app.vcxproj -> D:\321\build\Debug\app.exe
+  Building Custom Rule D:/321/CMakeLists.txt
+PS D:\321> .\build\Debug\app.exe
+sss11
+1
+PS D:\321> ^C

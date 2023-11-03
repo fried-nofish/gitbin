@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(345)
+set(CMAKE_CXX_STANDARD 17)
+set(HOME /345)
+set(EXECUTABLE_OUTPUT_PATH ${HOME}/bin/)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+file(GLOB SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/ddl/*.cpp)
+add_executable(543  ${SRC_LIST})

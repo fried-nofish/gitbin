@@ -1,0 +1,10 @@
+^D:\CMAKETEST\DOUBLE\BUILD\CMAKEFILES\FC4379EFB42DBFB86EA8D86629047289\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/cmaketest/double -BD:/cmaketest/double/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/cmaketest/double/build/double.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
