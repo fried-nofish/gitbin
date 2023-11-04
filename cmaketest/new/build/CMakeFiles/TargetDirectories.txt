@@ -1,0 +1,3 @@
+D:/cmaketest/new/build/CMakeFiles/hc.dir
+D:/cmaketest/new/build/CMakeFiles/edit_cache.dir
+D:/cmaketest/new/build/CMakeFiles/rebuild_cache.dir
