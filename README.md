@@ -43,3 +43,6 @@ git filter-branch --tree-filter 'rm -f file.txt' -- --all
 - [x] 发布一个二进制版本
 - [x] 提出 issue 并解决它
 - [ ] 进行一次 CI/CD
+
+
+### I know
